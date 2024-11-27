@@ -1,0 +1,26 @@
+Diákok
+
+Egy diákról nyilvántartjuk a
+
+    életkorát, egész, 14..22 közötti érték,
+    szak (infó, sport, egészségügy, stb - [lehet enum, ha tudod mi az])
+    neve, string, min 3 kar, max 64 kar hosszú,
+    tanulmányi átlagát, tört szám, 1.0 .. 5.0 közötti,
+    általa felvett tárgyak listája, stringek (tárgynevek), nem szerepelhet a listán null, és egy tárgynév maximum egyszer szerepelhet a listán.
+    konstruktor (neve, életkora, szak, átlaga)
+	konstruktor (neve, életkora, szak, átlaga, 1 tárgy neve)
+    konstruktor (neve, életkora, szak, átlaga, 2 tárgy neve) [vagy params a "tárgylistához"]
+    konsruktor (neve, szak), az életkora ilyenkor fixen 18, átlaga 3.0, nincs tárgy felvéve
+
+Készítsünk egy osztályt: iskola
+
+    diákok listája,
+    a listára nem kerülhet fel null érték, egy diák csak egyszer szerepelhet,
+    lehet diákot hozzáadni és törölni (függvények)
+    megadja a diákok aktuális létszámát (csak olvasható property)
+    megadja diákok átlag életkorát (csak olvasható property)
+
+Főprogram:
+
+    véletlen adatokkal feltölt egy iskolát 30 diákkal,
+    kiírja az iskola létszámát, átlag életkorát
